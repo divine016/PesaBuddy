@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+// To showcase the demo of dark theme. 
+``` JavaScript
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleDark = document.getElementById('toggleDark')
+    toggleDark.addEventListener('click', function() {
+      if(document.documentElement.classList.includes('dark')) {
+        document.documentElement.classList.remove('dark')
+      }
+      else {
+        document.documentElement.classList.add('dark')
+      }
+      alert("click!")
+    });
+  });
+</script>
+```

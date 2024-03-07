@@ -5,6 +5,8 @@ import { AuthContext } from '../Context/AuthContext'
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css"
 
+import {bg2, icon  } from "../assets/pesa";
+
 const Login = () => {
 
   const { isLoginLoading,
@@ -27,11 +29,12 @@ const Login = () => {
 
   return (
 
-    <div className='text-white h-[100vh]  flex justify-center items-center bg-red-400 bg-cover' style={{ "backgroundImage": "url('../src/assets/pesa/bg2.jpg')" }}>
+    <div className='text-white h-[100vh]  flex justify-center items-center bg-red-400 dark:dark:bg-[#171b3f] bg-cover' 
+  style={{ "backgroundImage": `url({bg2})` }}>
 
       <div className='bg-slate-800 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md bg-opacity-60 relative'>
 
-        <img className="border-slate-400 my-4 py-4" width={100} height={100} src="../src/assets/pesa/icon.png" alt="logo image" />
+        <img className="border-slate-400 my-4 py-4" width={100} height={100} src={icon} alt="logo image" />
 
         <h1 className='text-4xl text-left font-bold text-white mb-6'>Welcome back friend! </h1>
 
@@ -61,10 +64,14 @@ const Login = () => {
             {/* <Link className='text-red-400'>Forgot password?</Link> */}
             <a className='text-red-400 hover:text-slate-200' href='' >Forgot password?</a>
           </div>
+{/* //this need to be chnaged once the login is also use like i need to link it with the api same for signup */}
 
+          <Link to='/dashboard'>
           <button type='submit' className="flex justify-center items-center py-4 px-4 font-monserrat text-[18px] leading-none rounded-full bg-white text-red-400 w-full  my-6 mr-4 hover:bg-red-400 hover:text-white duration-300 transition-colors" 
           
           >{isLoginLoading ? "Loggin you in..." : "Login"}</button>
+          </Link>
+          
 
           <div className='text-center'>
             <span className='m-4'>Don't yet have an account? </span>

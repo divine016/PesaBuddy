@@ -21,8 +21,8 @@ const Nav = () => {
     //     document.documentElement.classList.contains('dark')
     //  }
     return (
-        <header className="z-10 w-full fixed shadow-md top-0 left-0 ">
-            <nav className="flex justify-between dark:bg-[rgb(23,27,63)] bg-pale-blue items-center max-container padding-x">
+        <header className="z-10 w-full fixed shadow-md top-0 left-0 dark:bg-[rgb(23,27,63)] bg-pale-blue ">
+            <nav className="flex justify-between  max-container items-center  padding-x">
             {/* <nav className="md:flex flex justify-between dark:bg-[rgb(23,27,63)] bg-pale-blue items-center max-container padding-x"> */}
                 <a href="/">
                     <img src={headerLogo}

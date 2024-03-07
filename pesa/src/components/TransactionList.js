@@ -5,6 +5,11 @@ import Transaction from './Transaction';
 
 const TransactionList = () => {
     const {transactions} = useContext(GlobalContext);
+    let d = new Date();
+    let day = d.getDay();
+    let month = d.getMonth() + 1;
+    let year = d.getFullYear();
+    let dateStr = day + '/' + month + '/' + year;
     //console.log(context)
 
     return (
@@ -12,7 +17,7 @@ const TransactionList = () => {
         >
             <div className="relative rounded-md  p-6 w-full lg:w-[85%] bg-white dark:bg-[#171b3f] shadow-md  mb-2 mx-4 lg:mx-20">
                 <div>
-                    <h3 className='font-bold text-[35px] text-red-400 font-serif '>Transactions <span className='text-1xl text-white'>for {Date()}</span></h3>
+                    <h3 className='font-bold text-[35px] text-red-400 font-serif '>Transactions <span className='text-1xl text-white'>for {dateStr}</span></h3>
                     
                     <ul id='list' className='list text-white dark:bg-blue-950 dark:text-white bg-white'>
                         {transactions.map(transaction => (<Transaction key={transaction.id} transaction = {transaction}/>))}

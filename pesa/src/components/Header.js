@@ -23,7 +23,7 @@ const Header = () => {
             height={29}
           />
         </a>
-        <ul className="flex justify-center gap-16 items-center max-lg:hidden ">
+        {/* <ul className="flex justify-center gap-16 items-center max-lg:hidden ">
 
           <li>
             <Link to ="dashboard" className="font-monserrat leasding-normal text-lg text-slate-gray dark:text-white">Home
@@ -33,14 +33,14 @@ const Header = () => {
             <Link to="insights" className="font-monserrat leasding-normal text-lg text-slate-gray dark:text-white">Insights
             </Link>
           </li>
-        </ul>
+        </ul> */}
         <button className="bg-black text-white font-palanquin flex items-center gap-2 rounded-full p-3" onClick={() => { setDarkMode(!darkMode) }} > {darkMode ? 'Dark' : 'Light'} Mode
                         <img src={lightDark}
                             width={16}
                             height={16} alt="darkmode" />
                     </button>
-        <div className="lg:hidden max-lg:block hidden text-white dark:bg-white">
-          {/* //i need to change this */}
+        {/* <div className="lg:hidden max-lg:block hidden text-white dark:bg-white">
+          {/* //i need to change this 
           <img src={hamburger}
             alt="hamburger"
             width={25}
@@ -48,7 +48,7 @@ const Header = () => {
           />
 
 
-        </div>
+        </div> */}
       </nav>
     </header>
   )

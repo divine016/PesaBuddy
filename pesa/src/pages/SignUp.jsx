@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../Context/AuthContext"
-import { useEffect } from "react"
-import { bg2, icon } from '../assets/pesa'
+// import { useEffect } from "react"
+import {  icon } from '../assets/pesa'
 import Head from "../components/Head"
 import Footer  from "../sections/Footer"
 

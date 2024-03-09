@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import { AuthContext } from "../Context/AuthContext"
 import { useEffect } from "react"
 import { bg2, icon } from '../assets/pesa'
+import Head from "../components/Head"
+import Footer  from "../sections/Footer"
 
 const SignUp = () => {
 
@@ -25,9 +27,9 @@ const SignUp = () => {
 
   return (
 
-    <div id="signUP" className='text-white h-[100vh]  flex flex-col justify-center items-center dark:dark:bg-[#171b3f] bg-red-400 bg-cover' style={{ "backgroundImage": "url('../src/assets/pesa/bg2.jpg')" }}>
-
-      <div className='bg-slate-800 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md bg-opacity-60 relative'>
+    <div id="signUP" className='text-white  flex flex-col justify-center items-center dark:dark:bg-[#171b3f] bg-red-400 bg-cover' style={{ "backgroundImage": "url('../src/assets/pesa/bg2.jpg')" }}>
+       <Head/>
+      <div className='bg-slate-800 mt-24 lg:mt-32 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md bg-opacity-60 relative'>
         <img className="border-slate-400 my-3 py-3" width={80} height={80} src={icon} alt="logo image" />
         <h1 className='text-4xl text-left font-bold text-white mb-6'>Welcome To PesaBuddy</h1>
 
@@ -89,6 +91,9 @@ const SignUp = () => {
         </form>
 
       </div>
+      <section className="padding-x padding-t mt-10 w-full pb-8 bg-black dark:bg-[rgb(23,27,63)]">
+     <Footer />
+   </section>
 
     </div>
   )

@@ -4,6 +4,7 @@ import { AuthContext } from '../Context/AuthContext'
 // import SignUp from './SignUp'
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css"
+// import Head from 'compoments/Head';
 
 import {bg2, icon  } from "../assets/pesa";
 
@@ -31,7 +32,7 @@ const Login = () => {
 
     <div className='text-white h-[100vh]  flex justify-center items-center bg-red-400 dark:dark:bg-[#171b3f] bg-cover' 
   style={{ "backgroundImage": `url({bg2})` }}>
-
+    {/* <Head/> */}
       <div className='bg-slate-800 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md bg-opacity-60 relative'>
 
         <img className="border-slate-400 my-4 py-4" width={100} height={100} src={icon} alt="logo image" />

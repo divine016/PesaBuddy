@@ -1,5 +1,7 @@
 import Nav from "../components/Nav"
 import Footer from "../sections/Footer"
+import Head from "../components/Head"
+
 import { Link } from "react-router-dom"
 //import { icon } from "../assets/pesa"
 import { contact } from "../assets/images"
@@ -7,12 +9,12 @@ import { contact } from "../assets/images"
 const ContactUs = () => {
   return (
     <div >
-      <Nav />
-      <section className="dark:dark:bg-[#171b3f] ">
+      <Head />
+      <section className="dark:dark:bg-[#171b3f] z-[-1]">
         <div className="h-[100vh]">
           <div id="signUP" className='text-white  lg:mt-0 flex flex-col justify-center items-center dark:dark:bg-[#171b3f] bg-cover' style={{ "backgroundImage": "url('../src/assets/pesa/bg2.jpg')" }}>
 
-            <div className='bg-slate-800 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md bg-opacity-60  my-36 flex flex-col justify-center items-center lg:w-[70%]'>
+            <div className='bg-slate-800 border-slate-400 rounded-md p-8 shadow-lg backdrop-blur-md z-[-1] bg-opacity-60  my-36 flex flex-col justify-center items-center lg:w-[70%]'>
               <div>
               {/* <img className="border-slate-400 my-3 py-3" width={80} height={80} src={icon} alt="logo image" /> */}
               <h1 className='text-4xl text-left font-bold text-white mb-6'>Please fill in the form</h1>

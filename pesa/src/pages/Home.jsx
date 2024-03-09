@@ -1,13 +1,17 @@
 import { Hero, Reviews, Functionalities,  ContactUs, Footer, GetStarted } from "../sections"
 import Nav from "../components/Nav"
+import Head from "../components/Head"
 
 function Home() {
 
   return ( 
     <main className="relative dark:bg-[rgb(23,27,63)] dark:text-white">
-        <Nav />
+      <div className="z-10">
+      <Head />
+      </div>
+        
 
-        <section className="xl:padding-l wide:padding-r  padding-b"
+        <section className="xl:padding-l wide:padding-r -z-1 padding-b"
         id="home"
         >
           <Hero />

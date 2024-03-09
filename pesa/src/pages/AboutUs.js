@@ -1,12 +1,13 @@
 import React from 'react'
-import Nav from '../components/Nav'
+//import Nav from '../components/Nav'
 import Footer from '../sections/Footer'
 import { about, mission } from '../assets/images'
+import Head from '../components/Head'
 
 const AboutUs = () => {
   return (
     <div className='padding-t pb-8 dark:bg-[rgb(23,27,63)]'>
-      <Nav />
+      <Head />
       <section className='padding text-center'>
       <div className='flex justify-center gap-3 items-center '>
       <h2 className='text-coral-red font-bold text-4xl '>Who we are</h2>
